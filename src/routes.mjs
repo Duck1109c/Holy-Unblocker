@@ -14,6 +14,9 @@ const text404 = readFileSync(
 );
 
 const pages = {
+  /* If you are trying to add pages or assets in the root folder and 
+NOT entire folders check src/routes.mjs and add it manually. */
+
   index: 'index.html',
   'manifest.json': 'manifest.json',
   'test-404': 'error.html',
@@ -33,6 +36,7 @@ const pages = {
   'retro-games': 'pages/nav/emulibrary.html',
   /* Proxies */
   ultraviolet: 'pages/proxnav/ultraviolet.html',
+  uverror: 'pages/proxnav/ultraviolet-error.html',
   rammerhead: 'pages/proxnav/rammerhead.html',
   /* Proxy Presets */
   youtube: 'pages/proxnav/preset/youtube.html',
@@ -41,6 +45,9 @@ const pages = {
   flash: 'archive/gfiles/flash/index.html',
   webretro: 'archive/gfiles/rarch/index.html',
   'vibe-os': 'archive/vibeOS/index.html',
+  'robots.txt': 'robots.txt',
+  'sitemap.xml': 'sitemap.xml',
+  'browserconfig.xml': 'browserconfig.xml'
 };
 
 const externalPages = {
